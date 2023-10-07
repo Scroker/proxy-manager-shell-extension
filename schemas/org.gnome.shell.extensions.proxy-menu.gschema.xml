@@ -1,0 +1,8 @@
+<?xml verison="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="org.gnome.shell.extensions.proxy-menu" path="/org/gnome/shell/extensions/proxy-menu/">
+        <key name="feature-enabled" type="b">
+            <default>true</default>
+        </key>
+    </schema>
+</schemalist>

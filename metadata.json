@@ -1,0 +1,9 @@
+{
+  "name": "ProxyManager",
+  "description": "A sìmple extension to manage more than one proxy in gnome",
+  "uuid": "proxymanager@gdramis.meyem.org",
+  "settings-schema" : "org.gnome.shell.extensions.proxy-menu",
+  "shell-version": [
+    "45"
+  ]
+}
