@@ -48,8 +48,8 @@ class ProxyMenuToggle extends QuickSettings.QuickMenuToggle {
 
         // Add a section of items to the menu
         this._itemsSection = new PopupMenu.PopupMenuSection();
-        this._itemsSection.addAction(_('Proxy PICO'), () => console.debug('Menu item 1 selected!'));
-        this._itemsSection.addAction(_('Proxy IBM'), () => console.debug('Menu item 1 selected!'));
+        this._itemsSection.addAction(_('Proxy PICO'), () => console.debug('Menu item 1 selected!')).setOrnament(PopupMenu.Ornament.DOT);
+        this._itemsSection.addAction(_('Proxy IBM'), () => console.debug('Menu item 1 selected!')).setOrnament(PopupMenu.Ornament.NONE);
         this.menu.addMenuItem(this._itemsSection);
 
         // Add an entry point for more settings
