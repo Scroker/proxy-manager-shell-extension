@@ -31,7 +31,6 @@ class ProxyMenuToggle extends QuickSettings.QuickMenuToggle {
     _init(extensionObject) {
         super._init({
             title: _('Proxy'),
-            subtitle: _('Beta Version'),
             iconName: 'preferences-system-network-proxy-symbolic',
             toggleMode: true,
         });
@@ -54,7 +53,7 @@ class ProxyMenuToggle extends QuickSettings.QuickMenuToggle {
 
         // Add an entry point for more settings
         this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
-        const settingsItem = this.menu.addAction('Settings', () => estensionObject.openPreferences());
+        const settingsItem = this.menu.addAction('Settings', () => extensionObject.openPreferences());
 
         // Ensure the settings are unavailable when the screen is locked
         settingsItem.visible = Main.sessionMode.allowSettings;
